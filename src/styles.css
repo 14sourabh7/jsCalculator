@@ -1,0 +1,130 @@
+#wrapper {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: gray;
+}
+#calc {
+  margin: auto;
+  width: 30%;
+  background-color: #606067;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#number {
+  background-color: #2d2d36;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  height: 21%;
+  color: white;
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.dots {
+  font-family: "Times New Roman", Times, serif;
+  color: #818186;
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: 20px;
+}
+#input {
+  margin-right: 5px;
+  font-size: 1em;
+  text-align: end;
+  border-bottom: none;
+}
+.ele {
+  background-color: #606067;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 2em;
+  align-items: center;
+  border: 1px solid black;
+  border-left-color: #606067;
+}
+.item {
+  font-size: 1.3em;
+  width: 25%;
+  text-align: center;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+}
+.colormid {
+  background-color: #424249;
+}
+
+.bottomItem {
+  background-color: transparent;
+  height: 17%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 2em;
+  align-items: center;
+  /* border: 1px solid black; */
+  border-left-color: #606067;
+  border-radius: 0px 0px 20px 20px;
+}
+.itm {
+  font-size: 1.5em;
+  width: 25%;
+  text-align: center;
+  height: 100%;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  justify-content: center;
+}
+.itml {
+  border-radius: 0px 0px 20px 0px;
+  background-color: transparent;
+  color: white;
+}
+.itmr {
+  border-radius: 0px 0px 0px 20px;
+  background-color: transparent;
+  color: white;
+}
+
+.yel {
+  background-color: #fe9f0b;
+
+  border-right-color: #606067;
+}
+
+.btl {
+  width: 50.5%;
+}
+
+@media screen and (max-width: 1200px) {
+  #calc {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #calc {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #calc {
+    width: 90%;
+  }
+}
