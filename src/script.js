@@ -1,33 +1,42 @@
-var exp = "";
-operatorCount = 0;
+var result = 0;
+var operator = "+";
 
 function numberInput(num) {
-  exp += num;
-  display(num);
+  switch (operator) {
+    case "+":
+      result += Number(num);
+      break;
+    case "-":
+      result -= num;
+      break;
+    case "/":
+      result /= num;
+      break;
+    case "*":
+      result *= num;
+      break;
+  }
+
+  display(result);
 }
 function operatorInput(opr) {
-  if (operatorCount == 0) {
-    exp += opr;
-    operatorCount++;
-  } else {
-    exp = eval(exp);
-    display(exp);
-    exp += opr;
-    console.log(exp);
-  }
+  operator = opr;
 }
 
 function display(num) {
   document.getElementById("input").innerHTML = num;
 }
 function setzero() {
-  exp = "";
-  display(0);
+  result = 0;
+  operator = "+";
+  display(result);
 }
 function delDigit() {
-  exp = exp.slice(0, -1);
-  display(exp);
+  r = result % 10;
+  result -= r;
+  result /= 10;
+  display(result);
 }
 function Calculate() {
-  display(eval(exp + 0));
+  display(result);
 }
