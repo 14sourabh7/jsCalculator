@@ -1,29 +1,33 @@
 var exp = "";
-var calexp = "";
-function display() {
-  if (exp.length < 1) {
-    document.getElementById("input").innerHTML = 0;
-    return;
+operatorCount = 0;
+
+function numberInput(num) {
+  exp += num;
+  display(num);
+}
+function operatorInput(opr) {
+  if (operatorCount == 0) {
+    exp += opr;
+    operatorCount++;
+  } else {
+    exp = eval(exp);
+    display(exp);
+    exp += opr;
+    console.log(exp);
   }
-  document.getElementById("input").innerHTML =
-    exp.length > 13 ? exp[(0, 14)] : exp;
+}
+
+function display(num) {
+  document.getElementById("input").innerHTML = num;
 }
 function setzero() {
   exp = "";
-  display();
+  display(0);
 }
 function delDigit() {
   exp = exp.slice(0, -1);
-  display();
-}
-function concat(val) {
-  exp += `${val}`;
-  if (exp.length > 13) {
-    exp = "Max Limit - 13";
-  }
-  display();
+  display(exp);
 }
 function Calculate() {
-  exp = eval(exp + "+0");
-  display();
+  display(eval(exp + 0));
 }

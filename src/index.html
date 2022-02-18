@@ -17,30 +17,30 @@
         <div class="ele colormid">
           <button class="item" onclick="setzero()">AC</button>
           <button class="item" onclick="delDigit()">DEL</button>
-          <button class="item" onclick="concat('%')">%</button>
-          <button class="item yel" onclick="concat('/')">&#xf7;</button>
+          <button class="item" onclick="operatorInput('%')">%</button>
+          <button class="item yel" onclick="operatorInput('/')">&#xf7;</button>
         </div>
         <div class="ele">
-          <button class="item" onclick="concat(7)">7</button>
-          <button class="item" onclick="concat(8)">8</button>
-          <button class="item" onclick="concat(9)">9</button>
-          <button class="item yel" onclick="concat('*')">X</button>
+          <button class="item" onclick="numberInput(7)">7</button>
+          <button class="item" onclick="numberInput(8)">8</button>
+          <button class="item" onclick="numberInput(9)">9</button>
+          <button class="item yel" onclick="operatorInput('*')">X</button>
         </div>
         <div class="ele">
-          <button class="item" onclick="concat(4)">4</button>
-          <button class="item" onclick="concat(5)">5</button>
-          <button class="item" onclick="concat(6)">6</button>
-          <button class="item yel" onclick="concat('-')">-</button>
+          <button class="item" onclick="numberInput(4)">4</button>
+          <button class="item" onclick="numberInput(5)">5</button>
+          <button class="item" onclick="numberInput(6)">6</button>
+          <button class="item yel" onclick="operatorInput('-')">-</button>
         </div>
         <div class="ele">
-          <button class="item" onclick="concat(1)">1</button>
-          <button class="item" onclick="concat(2)">2</button>
-          <button class="item" onclick="concat(3)">3</button>
-          <button class="item yel" onclick="concat('+')">+</button>
+          <button class="item" onclick="numberInput(1)">1</button>
+          <button class="item" onclick="numberInput(2)">2</button>
+          <button class="item" onclick="numberInput(3)">3</button>
+          <button class="item yel" onclick="operatorInput('+')">+</button>
         </div>
         <div class="bottomItem">
-          <button class="btl itmr itm" onclick="concat(0)">0</button>
-          <button class="itm" onclick="concat('.')">.</button>
+          <button class="btl itmr itm" onclick="numberInput(0)">0</button>
+          <button class="itm" onclick="numberInput('.')">.</button>
 
           <button class="itm itml yel" onclick="Calculate()">=</button>
         </div>
